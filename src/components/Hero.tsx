@@ -1,5 +1,7 @@
 
 import { useEffect, useRef } from "react";
+import Profile from "../assets/profile.png"
+
 
 export interface HeroProps {
   name: string;
@@ -58,22 +60,9 @@ const Hero = ({ name, tagline }: HeroProps) => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-on-scroll opacity-0 mb-6">
             <div className="inline-flex items-center justify-center">
-              <div className="relative w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
+              <div className="relative w-32 h-32 md:w-32 md:h-32 flex items-center justify-center">
                 <span className="absolute inset-0 rounded-full bg-primary/10 animate-ping opacity-75"></span>
-                <span className="relative rounded-full p-3 bg-primary/10 text-primary">
-                  <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    viewBox="0 0 24 24" 
-                    fill="none" 
-                    stroke="currentColor" 
-                    strokeWidth="2" 
-                    strokeLinecap="round" 
-                    strokeLinejoin="round" 
-                    className="w-full h-full animate-scale-in"
-                  >
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                  </svg>
-                </span>
+                  <img src={Profile} alt="profile-pic" />
               </div>
             </div>
           </div>

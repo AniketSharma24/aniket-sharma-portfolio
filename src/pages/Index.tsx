@@ -12,43 +12,39 @@ import Footer from "../components/Footer";
 const Index = () => {
   // Example data - this would be replaced with real user data
   const userData = {
-    name: "John Doe",
-    tagline: "Full Stack Developer specializing in building exceptional digital experiences.",
-    about: `I'm a passionate software developer with 5+ years of experience building web applications using modern technologies. 
-    
-I specialize in JavaScript, React, and Node.js, with a strong focus on creating user-friendly interfaces and scalable backend solutions.
+    name: "Aniket Sharma",
+    tagline: "Frontend Developer specializing in building exceptional digital experiences.",
+    about: `I'm a passionate Senior UI Developer with 5+ years of experience crafting scalable, high-performance web applications.  
 
-When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through technical blog posts.`,
+I specialize in React.js, TypeScript, and modern frontend technologies, with a strong focus on building intuitive user interfaces and optimizing application performance.  
+
+Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animations, and refining web experiences through micro-interactions and futuristic design.`,
     
     skillCategories: [
       {
         category: "Frontend",
         skills: [
-          { name: "React", level: 90 },
-          { name: "TypeScript", level: 85 },
-          { name: "HTML/CSS", level: 95 },
-          { name: "Tailwind CSS", level: 90 },
-          { name: "Next.js", level: 80 },
+          { name: "React" },
+          { name: "JavaScript" },
+          { name: "TypeScript" },
+          { name: "HTML" },
+          { name: "CSS" },
         ],
       },
       {
         category: "Backend",
         skills: [
-          { name: "Node.js", level: 85 },
-          { name: "Express", level: 80 },
-          { name: "MongoDB", level: 75 },
-          { name: "PostgreSQL", level: 70 },
-          { name: "GraphQL", level: 65 },
+          { name: "NodeJs" },
+          { name: "Express" },
+          { name: "MongoDB" },
         ],
       },
       {
         category: "DevOps & Tools",
         skills: [
-          { name: "Git", level: 90 },
-          { name: "Docker", level: 70 },
-          { name: "AWS", level: 60 },
-          { name: "CI/CD", level: 65 },
-          { name: "Jest", level: 75 },
+          { name: "Git" },
+          { name: "Jest" },
+          { name: "CI/CD" },
         ],
       },
     ],
@@ -99,16 +95,15 @@ When I'm not coding, you can find me exploring new technologies, contributing to
     ],
     
     profiles: [
-      { platform: "GitHub", url: "https://github.com/johndoe", username: "johndoe" },
-      { platform: "LeetCode", url: "https://leetcode.com/johndoe", username: "johndoe" },
-      { platform: "HackerRank", url: "https://hackerrank.com/johndoe", username: "johndoe" },
-      { platform: "Codeforces", url: "https://codeforces.com/profile/johndoe", username: "johndoe" },
-      { platform: "GeeksforGeeks", url: "https://geeksforgeeks.org/user/johndoe", username: "johndoe" },
+      { platform: "Linkedin", url: "https://www.linkedin.com/in/aniketsharma24/", username: "aniketsharma24" },
+      { platform: "GitHub", url: "https://github.com/AniketSharma24", username: "aniketsharma24" },
+      { platform: "LeetCode", url: "https://leetcode.com/aniketsharma24", username: "aniketsharma24" },
+      { platform: "HackerRank", url: "https://www.hackerrank.com/profile/aniketsharma24", username: "aniketsharma24" },
     ],
     
-    email: "john.doe@example.com",
-    linkedinUrl: "https://linkedin.com/in/johndoe",
-    githubUrl: "https://github.com/johndoe",
+    email: "aniketcode24@gmail.com",
+    linkedinUrl: "https://www.linkedin.com/in/aniketsharma24/",
+    githubUrl: "https://github.com/AniketSharma24",
   };
 
   const [isLoading, setIsLoading] = useState(true);
@@ -127,7 +122,7 @@ When I'm not coding, you can find me exploring new technologies, contributing to
       <div className="min-h-screen flex items-center justify-center">
         <div className="flex flex-col items-center">
           <div className="w-16 h-16 border-4 border-primary/20 border-t-primary rounded-full animate-spin mb-4"></div>
-          <p className="text-muted-foreground">Loading portfolio...</p>
+          <p className="text-muted-foreground">Hang tight! Loading my portfolio...</p>
         </div>
       </div>
     );

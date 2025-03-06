@@ -1,5 +1,6 @@
 
 import { useEffect, useRef } from "react";
+import Profile from "../assets/profile.png"
 
 export interface AboutProps {
   about: string;
@@ -45,17 +46,19 @@ const About = ({ about }: AboutProps) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Image or illustration */}
           <div className="order-2 md:order-1 animate-on-scroll opacity-0">
-            <div className="relative">
-              <div className="aspect-square w-full max-w-md mx-auto rounded-2xl overflow-hidden border border-border/50 shadow-xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
-                {/* This would be replaced with an actual image */}
-                <div className="h-full w-full bg-gradient-to-br from-secondary/50 to-primary/10 flex items-center justify-center">
-                  <span className="text-6xl">👨‍💻</span>
-                </div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-accent/30 rounded-full blur-3xl -z-10"></div>
-              <div className="absolute -top-4 -left-4 w-32 h-32 bg-muted/50 rounded-full blur-3xl -z-10"></div>
-            </div>
+          <div className="relative flex justify-center">
+  <div className="relative w-52 h-52 md:w-64 md:h-64 rounded-full border-4 border-primary shadow-lg overflow-hidden group">
+    <img
+      src={Profile}
+      alt="Profile"
+      className="w-full h-full object-cover transform group-hover:scale-105 transition-all duration-500"
+    />
+    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 opacity-50 group-hover:opacity-70 transition-all duration-500"></div>
+  </div>
+  <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-accent/30 rounded-full blur-3xl -z-10"></div>
+  <div className="absolute -top-4 -left-4 w-20 h-20 bg-muted/50 rounded-full blur-3xl -z-10"></div>
+</div>
+
           </div>
           
           {/* Content */}
