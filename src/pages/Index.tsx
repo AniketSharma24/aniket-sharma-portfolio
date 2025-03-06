@@ -8,6 +8,7 @@ import Projects from "../components/Projects";
 import CodingProfiles from "../components/CodingProfiles";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import PortfolioProject from "../assets/PortfolioProject.png"
 
 const Index = () => {
   // Example data - this would be replaced with real user data
@@ -53,8 +54,9 @@ Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animatio
       title: "Portfolio Website",
       description: "A personal portfolio website showcasing my projects and skills with a modern, responsive design.",
       tags: ["React", "Tailwind CSS", "Framer Motion"],
-      githubLink: "https://github.com/username/portfolio",
-      demoLink: "https://portfolio-demo.com",
+      githubLink: "https://github.com/AniketSharma24/aniket-sharma-portfolio",
+      demoLink: "https://aniketsharma24.netlify.app/",
+      image: PortfolioProject,
     }],
     
     profiles: [
