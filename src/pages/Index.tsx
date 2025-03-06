@@ -49,50 +49,13 @@ Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animatio
       },
     ],
     
-    projects: [
-      {
-        title: "E-commerce Platform",
-        description: "A full-stack e-commerce solution with product management, cart functionality, and secure payment processing.",
-        tags: ["React", "Node.js", "MongoDB", "Stripe"],
-        githubLink: "https://github.com/username/ecommerce",
-        demoLink: "https://ecommerce-demo.com",
-      },
-      {
-        title: "Task Management App",
-        description: "A productivity tool for managing tasks, projects, and team collaboration with real-time updates.",
-        tags: ["React", "Firebase", "Redux", "Material UI"],
-        githubLink: "https://github.com/username/task-app",
-        demoLink: "https://task-app-demo.com",
-      },
-      {
-        title: "Weather Dashboard",
-        description: "An interactive weather application that provides detailed forecasts and historical weather data.",
-        tags: ["JavaScript", "API", "Chart.js", "CSS"],
-        githubLink: "https://github.com/username/weather-app",
-        demoLink: "https://weather-app-demo.com",
-      },
-      {
-        title: "Portfolio Website",
-        description: "A personal portfolio website showcasing my projects and skills with a modern, responsive design.",
-        tags: ["React", "Tailwind CSS", "Framer Motion"],
-        githubLink: "https://github.com/username/portfolio",
-        demoLink: "https://portfolio-demo.com",
-      },
-      {
-        title: "Chat Application",
-        description: "A real-time chat application with private messaging, group chats, and media sharing capabilities.",
-        tags: ["React", "Socket.io", "Node.js", "MongoDB"],
-        githubLink: "https://github.com/username/chat-app",
-        demoLink: "https://chat-app-demo.com",
-      },
-      {
-        title: "Finance Tracker",
-        description: "A personal finance management tool for tracking expenses, income, and financial goals with visual reports.",
-        tags: ["React", "D3.js", "Node.js", "PostgreSQL"],
-        githubLink: "https://github.com/username/finance-tracker",
-        demoLink: "https://finance-tracker-demo.com",
-      },
-    ],
+    projects: [{
+      title: "Portfolio Website",
+      description: "A personal portfolio website showcasing my projects and skills with a modern, responsive design.",
+      tags: ["React", "Tailwind CSS", "Framer Motion"],
+      githubLink: "https://github.com/username/portfolio",
+      demoLink: "https://portfolio-demo.com",
+    }],
     
     profiles: [
       { platform: "Linkedin", url: "https://www.linkedin.com/in/aniketsharma24/", username: "aniketsharma24" },
