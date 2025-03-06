@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
@@ -34,15 +33,15 @@ const Navbar = ({ name }: NavbarProps) => {
   ];
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled ? "py-3 glass" : "py-5 bg-transparent"
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
         {/* Logo/Name */}
-        <a 
-          href="#home" 
+        <a
+          href="#home"
           className="text-xl md:text-2xl font-semibold font-serif tracking-tight text-gradient"
         >
           {name || "Portfolio"}
@@ -67,7 +66,7 @@ const Navbar = ({ name }: NavbarProps) => {
         {/* Mobile Menu Toggle */}
         <div className="flex items-center gap-4 md:hidden">
           <ThemeToggle />
-          <button 
+          <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="p-2 text-primary focus:outline-none"
             aria-label="Toggle menu"
@@ -78,12 +77,12 @@ const Navbar = ({ name }: NavbarProps) => {
       </div>
 
       {/* Mobile Menu */}
-      <div 
+      <div
         className={`h-screen md:hidden fixed inset-0 bg-background/95 backdrop-blur-sm z-40 transition-all duration-3000 ease-in-out transform ${
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex flex-col h-full justify-center items-center gap-8 pt-16">
+        <div className="flex flex-col h-full justify-center items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
