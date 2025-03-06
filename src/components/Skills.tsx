@@ -1,9 +1,12 @@
 import { useEffect, useRef } from "react";
+import { FaReact, FaNodeJs, FaGit } from "react-icons/fa"; // FontAwesome icons
 import {
-  FaReact, FaNodeJs, FaGit,
-} from "react-icons/fa"; // FontAwesome icons
-import {
-  SiJavascript, SiTypescript, SiHtml5, SiCss3, SiMongodb, SiExpress,
+  SiJavascript,
+  SiTypescript,
+  SiHtml5,
+  SiCss3,
+  SiMongodb,
+  SiExpress,
 } from "react-icons/si"; // Simple Icons
 
 const iconMap: { [key: string]: JSX.Element } = {
@@ -35,10 +38,15 @@ export interface SkillsProps {
 
 const Skills = ({ skillCategories }: SkillsProps) => {
   return (
-    <section id="skills" className="py-24 section-padding relative bg-secondary/30">
+    <section
+      id="skills"
+      className="py-24 section-padding relative bg-secondary/30"
+    >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-medium text-primary mb-2">MY EXPERTISE</h2>
+          <h2 className="text-sm font-medium text-primary mb-2">
+            MY EXPERTISE
+          </h2>
           <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-gradient">
             Technical Skills
           </h3>
@@ -53,7 +61,9 @@ const Skills = ({ skillCategories }: SkillsProps) => {
               <ul className="space-y-4">
                 {category.skills.map((skill) => (
                   <li key={skill.name} className="flex items-center space-x-3">
-                    {iconMap[skill.name] || <span className="text-2xl">⚡</span>}
+                    {iconMap[skill.name] || (
+                      <span className="text-2xl">⚡</span>
+                    )}
                     <span className="font-medium">{skill.name}</span>
                   </li>
                 ))}

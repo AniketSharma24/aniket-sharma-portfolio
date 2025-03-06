@@ -1,7 +1,5 @@
-
 import { useEffect, useRef } from "react";
-import Profile from "../assets/profile.png"
-
+import Profile from "../assets/profile.png";
 
 export interface HeroProps {
   name: string;
@@ -10,7 +8,7 @@ export interface HeroProps {
 
 const Hero = ({ name, tagline }: HeroProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
-  
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -23,7 +21,8 @@ const Hero = ({ name, tagline }: HeroProps) => {
       { threshold: 0.1 }
     );
 
-    const elements = containerRef.current?.querySelectorAll(".animate-on-scroll");
+    const elements =
+      containerRef.current?.querySelectorAll(".animate-on-scroll");
     elements?.forEach((el) => observer.observe(el));
 
     return () => {
@@ -32,8 +31,8 @@ const Hero = ({ name, tagline }: HeroProps) => {
   }, []);
 
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       ref={containerRef}
     >
@@ -62,20 +61,26 @@ const Hero = ({ name, tagline }: HeroProps) => {
             <div className="inline-flex items-center justify-center">
               <div className="relative w-32 h-32 md:w-32 md:h-32 flex items-center justify-center">
                 <span className="absolute inset-0 rounded-full bg-primary/10 animate-ping opacity-75"></span>
-                  <img src={Profile} alt="profile-pic" />
+                <img src={Profile} alt="profile-pic" />
               </div>
             </div>
           </div>
 
           <h1 className="animate-on-scroll opacity-0 animation-delay-200 text-4xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 tracking-tight text-gradient">
             <div className="reveal-container">
-              <span className="reveal-text inline-block" style={{ "--delay": "200ms" } as React.CSSProperties}>
+              <span
+                className="reveal-text inline-block"
+                style={{ "--delay": "200ms" } as React.CSSProperties}
+              >
                 {name.split(" ")[0]}
               </span>
             </div>{" "}
             {name.split(" ").length > 1 && (
               <div className="reveal-container">
-                <span className="reveal-text inline-block" style={{ "--delay": "400ms" } as React.CSSProperties}>
+                <span
+                  className="reveal-text inline-block"
+                  style={{ "--delay": "400ms" } as React.CSSProperties}
+                >
                   {name.split(" ").slice(1).join(" ")}
                 </span>
               </div>
@@ -84,7 +89,8 @@ const Hero = ({ name, tagline }: HeroProps) => {
 
           <div className="animate-on-scroll opacity-0 animation-delay-400">
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto text-balance">
-              {tagline || "Full Stack Developer & Designer creating elegant solutions to complex problems."}
+              {tagline ||
+                "Full Stack Developer & Designer creating elegant solutions to complex problems."}
             </p>
           </div>
 

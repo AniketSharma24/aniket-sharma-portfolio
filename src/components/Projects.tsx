@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 
@@ -23,7 +22,8 @@ const Projects = ({ projects }: ProjectsProps) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const elements = entry.target.querySelectorAll(".animate-on-scroll");
+            const elements =
+              entry.target.querySelectorAll(".animate-on-scroll");
             elements.forEach((el, index) => {
               setTimeout(() => {
                 el.classList.add("animate-fade-in");
@@ -54,12 +54,21 @@ const Projects = ({ projects }: ProjectsProps) => {
     >
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-medium text-primary mb-2 animate-on-scroll opacity-0">MY WORK</h2>
-          <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-gradient animate-on-scroll opacity-0" style={{ animationDelay: "200ms" }}>
+          <h2 className="text-sm font-medium text-primary mb-2 animate-on-scroll opacity-0">
+            MY WORK
+          </h2>
+          <h3
+            className="text-3xl md:text-4xl font-serif font-bold mb-6 text-gradient animate-on-scroll opacity-0"
+            style={{ animationDelay: "200ms" }}
+          >
             Featured Projects
           </h3>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-balance animate-on-scroll opacity-0" style={{ animationDelay: "400ms" }}>
-            A selection of my recent work, showcasing my skills and problem-solving approach.
+          <p
+            className="text-muted-foreground max-w-2xl mx-auto text-balance animate-on-scroll opacity-0"
+            style={{ animationDelay: "400ms" }}
+          >
+            A selection of my recent work, showcasing my skills and
+            problem-solving approach.
           </p>
         </div>
 
