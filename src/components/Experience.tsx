@@ -1,6 +1,6 @@
 
 import { useEffect, useRef } from "react";
-import { Briefcase, Calendar } from "lucide-react";
+import { Briefcase, Calendar, CircuitBoard, ChevronRight } from "lucide-react";
 
 export interface ExperienceItem {
   company: string;
@@ -41,45 +41,86 @@ const Experience = ({ experiences }: ExperienceProps) => {
     <section 
       id="experience" 
       ref={sectionRef} 
-      className="py-24 section-padding relative"
+      className="py-24 section-padding relative bg-gradient-to-b from-background to-background/50"
     >
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-sm font-medium text-primary mb-2">
+          <h2 className="text-sm font-medium text-primary mb-2 tracking-wider uppercase">
             MY JOURNEY
           </h2>
           <h3 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-gradient">
             Professional Experience
           </h3>
+          <div className="w-16 h-1 bg-primary mx-auto rounded-full opacity-70"></div>
         </div>
 
-        <div className="relative border-l-2 border-primary/20 pl-6 md:pl-8 ml-4 md:ml-6 space-y-12">
+        <div className="grid gap-10">
           {experiences.map((experience, index) => (
             <div 
               key={`${experience.company}-${index}`} 
-              className={`relative animate-on-scroll opacity-0`}
+              className="animate-on-scroll opacity-0 group"
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              {/* Timeline dot - Fixed positioning */}
-              <div className="absolute -left-[31px] md:-left-[35px] -top-1">
-                <div className={`w-6 h-6 flex items-center justify-center rounded-full border-2 ${experience.current 
-                  ? "bg-primary border-primary" 
-                  : "bg-background border-primary/30"}`}>
-                  <Briefcase size={14} className={experience.current ? "text-primary-foreground" : "text-primary/70"} />
-                </div>
-              </div>
-
-              {/* Content card */}
-              <div className="bg-background/50 backdrop-blur-sm border border-border/50 rounded-lg p-5 shadow-sm transition-all hover:shadow-md">
-                <div className="flex justify-between items-start flex-wrap gap-2">
-                  <h4 className="text-xl font-medium">{experience.role}</h4>
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <Calendar size={14} className="mr-1" />
-                    <span>{experience.duration}</span>
+              <div className={`relative rounded-xl overflow-hidden backdrop-blur-sm transition-all duration-300
+                ${experience.current 
+                  ? "bg-primary/5 shadow-[0_0_15px_rgba(var(--primary-rgb)/0.2)]" 
+                  : "bg-card/30 hover:bg-card/50"}`}
+              >
+                {/* Glowing border for current position */}
+                {experience.current && (
+                  <div className="absolute inset-0 border border-primary/30 rounded-xl"></div>
+                )}
+                
+                {/* Content area */}
+                <div className="p-6 md:p-8 relative">
+                  {/* Top section with role, company, duration */}
+                  <div className="flex flex-col md:flex-row md:items-center justify-between mb-5 gap-3">
+                    <div className="flex items-start gap-4">
+                      <div className={`flex-shrink-0 rounded-lg p-3 
+                        ${experience.current 
+                          ? "bg-primary text-primary-foreground" 
+                          : "bg-muted"}`}
+                      >
+                        {experience.current ? (
+                          <CircuitBoard size={24} />
+                        ) : (
+                          <Briefcase size={24} className="text-muted-foreground" />
+                        )}
+                      </div>
+                      
+                      <div>
+                        <h4 className="text-xl font-medium mb-1 group-hover:text-primary transition-colors">
+                          {experience.role}
+                        </h4>
+                        <h5 className="text-lg font-medium text-primary">
+                          {experience.company}
+                        </h5>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center text-sm text-muted-foreground bg-muted/50 px-4 py-2 rounded-full">
+                      <Calendar size={14} className="mr-2" />
+                      <span>{experience.duration}</span>
+                    </div>
                   </div>
+                  
+                  {/* Description with markers */}
+                  <div className="space-y-3 pl-4 border-l-2 border-muted">
+                    {experience.description.split('\n\n').map((paragraph, i) => (
+                      <div key={i} className="flex items-start group/item">
+                        <ChevronRight size={16} className="mr-2 mt-1 flex-shrink-0 text-primary opacity-70" />
+                        <p className="text-muted-foreground group-hover/item:text-foreground transition-colors">
+                          {paragraph}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  {/* Decorative element */}
+                  {experience.current && (
+                    <div className="absolute -right-3 -bottom-3 w-24 h-24 bg-primary/5 rounded-full blur-2xl"></div>
+                  )}
                 </div>
-                <h5 className="text-lg font-medium text-primary mb-3">{experience.company}</h5>
-                <p className="text-muted-foreground whitespace-pre-line">{experience.description}</p>
               </div>
             </div>
           ))}
