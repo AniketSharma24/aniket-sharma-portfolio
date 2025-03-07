@@ -1,8 +1,10 @@
+
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Skills from "../components/Skills";
+import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import CodingProfiles from "../components/CodingProfiles";
 import Contact from "../components/Contact";
@@ -20,6 +22,28 @@ const Index = () => {
 I specialize in React.js, TypeScript, and modern frontend technologies, with a strong focus on building intuitive user interfaces and optimizing application performance.  
 
 Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animations, and refining web experiences through micro-interactions and futuristic design.`,
+
+    experiences: [
+      {
+        company: "TechForward Inc.",
+        role: "Senior UI Developer",
+        duration: "Jan 2022 - Present",
+        description: "Leading the frontend team in building responsive applications with React, TypeScript, and TailwindCSS. Implementing CI/CD pipelines and improving performance by 40%.",
+        current: true
+      },
+      {
+        company: "Innovate Solutions",
+        role: "Frontend Developer",
+        duration: "Mar 2020 - Dec 2021",
+        description: "Developed modern web applications using React.js, Redux, and CSS-in-JS libraries. Collaborated with UX designers to implement pixel-perfect interfaces."
+      },
+      {
+        company: "WebCraft Studios",
+        role: "Junior Developer",
+        duration: "Jun 2018 - Feb 2020",
+        description: "Started as an intern and grew into a full-time role. Worked on HTML, CSS, JavaScript, and basic React components. Participated in agile development processes."
+      }
+    ],
 
     skillCategories: [
       {
@@ -112,6 +136,7 @@ Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animatio
       <Hero name={userData.name} tagline={userData.tagline} />
       <About about={userData.about} />
       <Skills skillCategories={userData.skillCategories} />
+      <Experience experiences={userData.experiences} />
       <Projects projects={userData.projects} />
       <CodingProfiles profiles={userData.profiles} />
       <Contact
