@@ -60,12 +60,12 @@ const Experience = ({ experiences }: ExperienceProps) => {
               className={`relative animate-on-scroll opacity-0`}
               style={{ animationDelay: `${index * 150}ms` }}
             >
-              {/* Timeline dot */}
-              <div className="absolute -left-[29px] md:-left-[33px] top-0">
-                <div className={`p-1.5 rounded-full border-2 ${experience.current 
+              {/* Timeline dot - Fixed positioning */}
+              <div className="absolute -left-[31px] md:-left-[35px] -top-1">
+                <div className={`w-6 h-6 flex items-center justify-center rounded-full border-2 ${experience.current 
                   ? "bg-primary border-primary" 
                   : "bg-background border-primary/30"}`}>
-                  <Briefcase size={16} className={experience.current ? "text-primary-foreground" : "text-primary/70"} />
+                  <Briefcase size={14} className={experience.current ? "text-primary-foreground" : "text-primary/70"} />
                 </div>
               </div>
 
@@ -79,7 +79,7 @@ const Experience = ({ experiences }: ExperienceProps) => {
                   </div>
                 </div>
                 <h5 className="text-lg font-medium text-primary mb-3">{experience.company}</h5>
-                <p className="text-muted-foreground">{experience.description}</p>
+                <p className="text-muted-foreground whitespace-pre-line">{experience.description}</p>
               </div>
             </div>
           ))}

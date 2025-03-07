@@ -25,23 +25,23 @@ Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animatio
 
     experiences: [
       {
-        company: "TechForward Inc.",
+        company: "Citi Pune, India",
         role: "Senior UI Developer",
-        duration: "Jan 2022 - Present",
-        description: "Leading the frontend team in building responsive applications with React, TypeScript, and TailwindCSS. Implementing CI/CD pipelines and improving performance by 40%.",
+        duration: "December 2023 – Present",
+        description: "Led the creation of highly responsive and reusable UI components using React.js and Redux workflows.\n\nDesigned and built scalable architectures, reducing defect rates by 20% through the use of design patterns and code optimization techniques.\n\nPartnered with cross-functional teams to implement agile methodologies, shortening delivery times for critical features by an estimated 15%.",
         current: true
       },
       {
-        company: "Innovate Solutions",
-        role: "Frontend Developer",
-        duration: "Mar 2020 - Dec 2021",
-        description: "Developed modern web applications using React.js, Redux, and CSS-in-JS libraries. Collaborated with UX designers to implement pixel-perfect interfaces."
+        company: "Globant Pune, India",
+        role: "Senior Front End Engineer",
+        duration: "December 2021 – December 2023",
+        description: "Delivered several high-impact projects on tight deadlines, leveraging React.js to build modular and scalable applications.\n\nDesigned and implemented optimized React hooks for improved state management, resulting in a 20% performance increase.\n\nEnhanced user experience by streamlining navigation and optimizing search functionalities, leading to a 10% reduction in user interaction time."
       },
       {
-        company: "WebCraft Studios",
-        role: "Junior Developer",
-        duration: "Jun 2018 - Feb 2020",
-        description: "Started as an intern and grew into a full-time role. Worked on HTML, CSS, JavaScript, and basic React components. Participated in agile development processes."
+        company: "Infocepts Nagpur, India",
+        role: "Frontend Engineer",
+        duration: "June 2019 - December 2021",
+        description: "Developed dynamic and scalable web applications using Angular, contributing to improved application performance and user engagement.\n\nOptimized complex workflows by implementing RxJS for effective state management and asynchronous operations.\n\nDefined reusable Angular components and ensured cross-browser compatibility for consistent user interactions."
       }
     ],
 
