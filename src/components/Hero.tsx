@@ -96,10 +96,10 @@ const Hero = ({ name, tagline }: HeroProps) => {
 
           <div className="animate-on-scroll opacity-0 animation-delay-600 flex flex-wrap justify-center gap-4">
             <a
-              href="#projects"
+              href="#experience"
               className="px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium transition-all hover:bg-primary/90 shadow-sm"
             >
-              View My Work
+              View My Journey
             </a>
             <a
               href="#contact"

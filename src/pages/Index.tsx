@@ -8,6 +8,11 @@ import CodingProfiles from "../components/CodingProfiles";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import PortfolioProject from "../assets/PortfolioProject.png";
+import Experience from "@/components/Experience";
+import CitiLogo from "../assets/CitiLogo.png";
+import GlobantLogo from "../assets/GlobantLogo.png";
+import InfoceptsLogo from "../assets/InfoceptsLogo.jpeg";
+import PersistentLogo from "../assets/PersistentLogo.png";
 
 const Index = () => {
   // Example data - this would be replaced with real user data
@@ -20,6 +25,42 @@ const Index = () => {
 I specialize in React.js, TypeScript, and modern frontend technologies, with a strong focus on building intuitive user interfaces and optimizing application performance.  
 
 Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animations, and refining web experiences through micro-interactions and futuristic design.`,
+
+    experiences: [
+      {
+        company: "Citi Pune, India",
+        role: "Senior UI Developer",
+        duration: "December 2023 - Present",
+        description:
+          "Building scalable UI components with React.js, optimizing performance, and driving agile development for faster feature delivery.",
+        current: true,
+        logo: CitiLogo,
+      },
+      {
+        company: "Globant Pune, India",
+        role: "Senior Front End Engineer",
+        duration: "December 2021 - December 2023",
+        description:
+          "Developed high-performance React apps, optimized state management, and enhanced navigation for better user experience.",
+        logo: GlobantLogo,
+      },
+      {
+        company: "Infocepts Nagpur, India",
+        role: "Frontend Engineer",
+        duration: "June 2019 - December 2021",
+        description:
+          "Built dynamic Angular apps, optimized workflows with RxJS, and designed reusable, cross-browser UI components.",
+        logo: InfoceptsLogo,
+      },
+      {
+        company: "Persistent Nagpur, India",
+        role: "Frontend Engineer",
+        duration: "December 2018 - May 2019",
+        description:
+          "Developed enterprise Angular applications, improved UI performance, and ensured responsive, accessible designs.",
+        logo: PersistentLogo,
+      },
+    ],
 
     skillCategories: [
       {
@@ -112,6 +153,7 @@ Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animatio
       <Hero name={userData.name} tagline={userData.tagline} />
       <About about={userData.about} />
       <Skills skillCategories={userData.skillCategories} />
+      <Experience experiences={userData.experiences} />
       <Projects projects={userData.projects} />
       <CodingProfiles profiles={userData.profiles} />
       <Contact

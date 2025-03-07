@@ -6,6 +6,7 @@ import {
   AlertCircle,
   Terminal,
   MessageSquare,
+  Linkedin,
 } from "lucide-react";
 
 export interface Profile {
@@ -20,12 +21,10 @@ export interface CodingProfilesProps {
 
 // Map platform names to icons
 const platformIcons: Record<string, React.ReactNode> = {
+  Linkedin: <Linkedin className="w-5 h-5" />,
   GitHub: <Github className="w-5 h-5" />,
   LeetCode: <Code className="w-5 h-5" />,
   HackerRank: <Terminal className="w-5 h-5" />,
-  Codeforces: <AlertCircle className="w-5 h-5" />,
-  GeeksforGeeks: <MessageSquare className="w-5 h-5" />,
-  // Add other platforms as needed
 };
 
 const CodingProfiles = ({ profiles }: CodingProfilesProps) => {
