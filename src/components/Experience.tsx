@@ -99,7 +99,6 @@ const Experience = ({ experiences }: ExperienceProps) => {
                         </h5>
                       </div>
                     </div>
-
                     <div className="flex items-center text-sm text-muted-foreground bg-muted/50 px-4 py-2 rounded-full">
                       <Calendar size={14} className="mr-2" />
                       <span>{experience.duration}</span>
