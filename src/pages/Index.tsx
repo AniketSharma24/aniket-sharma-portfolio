@@ -28,20 +28,20 @@ Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animatio
         company: "Citi Pune, India",
         role: "Senior UI Developer",
         duration: "December 2023 – Present",
-        description: "Led the creation of highly responsive and reusable UI components using React.js and Redux workflows.\n\nDesigned and built scalable architectures, reducing defect rates by 20% through the use of design patterns and code optimization techniques.\n\nPartnered with cross-functional teams to implement agile methodologies, shortening delivery times for critical features by an estimated 15%.",
+        description: "Led development of responsive UI components with React.js, reducing defect rates by 20% through optimized architecture and collaborated with cross-functional teams to shorten delivery times.",
         current: true
       },
       {
         company: "Globant Pune, India",
         role: "Senior Front End Engineer",
         duration: "December 2021 – December 2023",
-        description: "Delivered several high-impact projects on tight deadlines, leveraging React.js to build modular and scalable applications.\n\nDesigned and implemented optimized React hooks for improved state management, resulting in a 20% performance increase.\n\nEnhanced user experience by streamlining navigation and optimizing search functionalities, leading to a 10% reduction in user interaction time."
+        description: "Delivered high-impact projects using React.js, implemented optimized hooks for a 20% performance boost, and enhanced user experience by streamlining navigation and search functionalities."
       },
       {
         company: "Infocepts Nagpur, India",
         role: "Frontend Engineer",
         duration: "June 2019 - December 2021",
-        description: "Developed dynamic and scalable web applications using Angular, contributing to improved application performance and user engagement.\n\nOptimized complex workflows by implementing RxJS for effective state management and asynchronous operations.\n\nDefined reusable Angular components and ensured cross-browser compatibility for consistent user interactions."
+        description: "Developed dynamic web applications with Angular, optimized complex workflows with RxJS, and created reusable components ensuring cross-browser compatibility."
       }
     ],
 

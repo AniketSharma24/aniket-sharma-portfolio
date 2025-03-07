@@ -104,16 +104,19 @@ const Experience = ({ experiences }: ExperienceProps) => {
                     </div>
                   </div>
                   
-                  {/* Description with markers */}
+                  {/* Single summarized description with marker */}
                   <div className="space-y-3 pl-4 border-l-2 border-muted">
-                    {experience.description.split('\n\n').map((paragraph, i) => (
-                      <div key={i} className="flex items-start group/item">
-                        <ChevronRight size={16} className="mr-2 mt-1 flex-shrink-0 text-primary opacity-70" />
-                        <p className="text-muted-foreground group-hover/item:text-foreground transition-colors">
-                          {paragraph}
-                        </p>
-                      </div>
-                    ))}
+                    <div className="flex items-start group/item">
+                      <ChevronRight size={16} className="mr-2 mt-1 flex-shrink-0 text-primary opacity-70" />
+                      <p className="text-muted-foreground group-hover/item:text-foreground transition-colors">
+                        {experience.company === "Citi Pune, India" 
+                          ? "Led development of responsive UI components with React.js, reducing defect rates by 20% through optimized architecture and collaborated with cross-functional teams to shorten delivery times."
+                          : experience.company === "Globant Pune, India"
+                          ? "Delivered high-impact projects using React.js, implemented optimized hooks for a 20% performance boost, and enhanced user experience by streamlining navigation and search functionalities."
+                          : "Developed dynamic web applications with Angular, optimized complex workflows with RxJS, and created reusable components ensuring cross-browser compatibility."
+                        }
+                      </p>
+                    </div>
                   </div>
                   
                   {/* Decorative element */}
