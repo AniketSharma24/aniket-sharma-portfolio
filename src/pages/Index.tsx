@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
@@ -29,7 +28,7 @@ Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animatio
 
     experiences: [
       {
-        company: "Citi Pune, India",
+        company: "Citi - India",
         role: "Senior UI Developer",
         duration: "December 2023 - Present",
         description:
@@ -38,7 +37,7 @@ Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animatio
         logo: CitiLogo,
       },
       {
-        company: "Globant Pune, India",
+        company: "Globant - India",
         role: "Senior Front End Engineer",
         duration: "December 2021 - December 2023",
         description:
@@ -46,7 +45,7 @@ Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animatio
         logo: GlobantLogo,
       },
       {
-        company: "Infocepts Nagpur, India",
+        company: "Infocepts - India",
         role: "Frontend Engineer",
         duration: "June 2019 - December 2021",
         description:
@@ -54,8 +53,8 @@ Beyond coding, I enjoy exploring cutting-edge technologies, creating UI animatio
         logo: InfoceptsLogo,
       },
       {
-        company: "Persistent Nagpur, India",
-        role: "Frontend Engineer",
+        company: "Persistent Systems - India",
+        role: "Software Trainee",
         duration: "December 2018 - May 2019",
         description:
           "Developed enterprise Angular applications, improved UI performance, and ensured responsive, accessible designs.",
